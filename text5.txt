@@ -1,0 +1,136 @@
+PS C:\Users\Admin\Documents\java files> cd git
+PS C:\Users\Admin\Documents\java files\git> cd githubshree1
+PS C:\Users\Admin\Documents\java files\git\githubshree1> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\Admin\Documents\java files\git\githubshree1> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    text2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Admin\Documents\java files\git\githubshree1> git add text2.txt
+PS C:\Users\Admin\Documents\java files\git\githubshree1> git commit -m "create text2.text"
+[main 8df4723] create text2.text
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 text2.txt
+PS C:\Users\Admin\Documents\java files\git\githubshree1> git push origin main 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 226 bytes | 9.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Shreeram-78/githubshree1.git
+   b542f88..8df4723  main -> main
+PS C:\Users\Admin\Documents\java files\git\githubshree1> cd git ..
+Set-Location : A positional parameter cannot be found that accepts argument '..'.
+At line:1 char:1
++ cd git ..
++ ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\Admin\Documents\java files\git\githubshree1> git pull
+Already up to date.
+PS C:\Users\Admin\Documents\java files\git\githubshree1> git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 960 bytes | 43.00 KiB/s, done.
+From https://github.com/Shreeram-78/githubshree1
+   8df4723..28fc863  main       -> origin/main
+Updating 8df4723..28fc863
+Fast-forward
+ dummy.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 dummy.txt
+PS C:\Users\Admin\Documents\java files\git\githubshree1> cd ..
+PS C:\Users\Admin\Documents\java files\git> cd githubshree2
+PS C:\Users\Admin\Documents\java files\git\githubshree2> git init  
+Initialized empty Git repository in C:/Users/Admin/Documents/java files/git/githubshree2/.git/
+PS C:\Users\Admin\Documents\java files\git\githubshree2> git satus 
+git: 'satus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+PS C:\Users\Admin\Documents\java files\git\githubshree2> git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+PS C:\Users\Admin\Documents\java files\git\githubshree2> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Admin\Documents\java files\git\githubshree2> git add .
+PS C:\Users\Admin\Documents\java files\git\githubshree2> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   style.css
+
+PS C:\Users\Admin\Documents\java files\git\githubshree2> git commit -m "creates index.html and style.css"
+[master (root-commit) 767d066] creates index.html and style.css
+ 2 files changed, 1 insertion(+)
+ create mode 100644 index.html
+ create mode 100644 style.css
+PS C:\Users\Admin\Documents\java files\git\githubshree2> git remote add origin https://github.com/Shreeram-78/githubshree2.git
+PS C:\Users\Admin\Documents\java files\git\githubshree2> git push origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\Admin\Documents\java files\git\githubshree2> git push origin master 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 298 bytes | 49.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Shreeram-78/githubshree2.git
+ * [new branch]      master -> master
+PS C:\Users\Admin\Documents\java files\git\githubshree2> git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+PS C:\Users\Admin\Documents\java files\git\githubshree2> git add .
+PS C:\Users\Admin\Documents\java files\git\githubshree2> git commit -m "create nkfgjoajgo"
+[master 0be69a6] create nkfgjoajgo
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 text5.txt
+PS C:\Users\Admin\Documents\java files\git\githubshree2> git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Shreeram-78/githubshree2.git'
+PS C:\Users\Admin\Documents\java files\git\githubshree2> git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 288 bytes | 41.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Shreeram-78/githubshree2.git
